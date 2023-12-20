@@ -1,8 +1,10 @@
 module "vpc" {
     source = "terraform-aws-modules/vpc/aws"
+    version = "~> 3.19.0"
+    
 
-  name = "my-vpc"
-  cidr = "10.0.0.0/16"
+  name = local.vpc.name
+  cidr = local.vpc.cidr
 
   azs             = local.vpc.azs
   public_subnets  = local.vpc.public_subnets
