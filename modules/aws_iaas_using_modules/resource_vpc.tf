@@ -11,9 +11,6 @@ module "vpc" {
 
   public_subnet_tags_per_az = local.vpc.public_subnet_tags_per_az
 
-  enable_nat_gateway = true
-  single_nat_gateway = true
-
   tags = local.tags
 
   vpc_tags = local.vpc.tags
