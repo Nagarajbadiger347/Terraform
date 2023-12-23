@@ -1,5 +1,5 @@
 module "server1_name" {
-  source = "./custom_module/name"
+  source = "./name"
 
   app_abbrev  = var.prefix
   name        = "server1"
@@ -32,7 +32,7 @@ resource "aws_instance" "server1" {
 }
 
 module "server2_name" {
-  source = "./custom_module/name"
+  source = "./name"
 
   app_abbrev  = var.prefix
   name        = "server2"
@@ -78,7 +78,7 @@ data "aws_ami" "ubuntu" {
 }
 
 module "ssh_key_name" {
-  source = "./custom_module/name"
+  source = "./name"
 
   app_abbrev  = var.prefix
   name        = "sshkey"
