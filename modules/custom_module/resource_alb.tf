@@ -1,5 +1,5 @@
 module "lb_name" {
-  source = "./custom_module/name"
+  source = "./name"
 
   app_abbrev  = var.prefix
   name        = "front-end"
@@ -17,7 +17,7 @@ resource "aws_lb" "front_end" {
 
 
 module "tg_name" {
-  source = "./custom_module/name"
+  source = "./name"
 
   app_abbrev  = var.prefix
   name        = "front-end"
