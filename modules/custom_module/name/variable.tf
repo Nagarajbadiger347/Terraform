@@ -12,7 +12,10 @@ variable "environment" {
     }
   
 }
-
+variable "type" {
+  description = "The type of resource the name is being generated for"
+  type        = string
+}
 variable "region" {
     description = "aws region u wanted resource be their"
     type = string 
