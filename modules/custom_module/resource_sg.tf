@@ -1,5 +1,5 @@
 module "server_sg_name" {
-    source = "./custom_module/name"
+    source = "./name"
 
     app_abbrev  = var.prefix
     name        = "server"
@@ -22,7 +22,7 @@ module "server-sg" {
 
 
 module "alb_sg_name" {
-  source = "./custom_module/name"
+  source = "./name"
 
 
   app_abbrev  = var.prefix
