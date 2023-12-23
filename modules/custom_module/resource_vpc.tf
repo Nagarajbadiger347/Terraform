@@ -1,5 +1,5 @@
 module "vpc_name" {
-    source = "./custom_module/name"
+    source = "./name"
 
     app_abbrev = var.prefix
     name = local.vpc.name
